@@ -31,9 +31,10 @@ On the OBS computer you record the game on, put `rtmp://192.168.1.x/livein` as t
 
 ##### Start the image
 ```
-docker run --rm antonyho/ubuntu-stream-server -p 1935:1935 \
+docker run --rm -p 1935:1935 \
 -e TWITCH_ADDRESS='live.twitch.tv' \
 -e TWITCH_STREAM_KEY='live_149239837_3w8rlsjdflaasdkfukw3hksldhjflkahsj' \
 -e YOUTUBE_ADDRESS='a.rtmp.youtube.com/live2' \
--e YOUTUBE_STREAM_KEY='21s2-o23h-oso9-a64n'
+-e YOUTUBE_STREAM_KEY='21s2-o23h-oso9-a64n' \
+ubuntu-stream-server 
 ```
