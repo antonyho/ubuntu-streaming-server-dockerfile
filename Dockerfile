@@ -6,7 +6,7 @@ RUN apt-get install -y ffmpeg
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:malcscott/nginx-rtmp
 RUN apt-get update
-RUN apt-get install -y nginx
+RUN apt-get install -y nginx-extras
 
 RUN service nginx stop
 
