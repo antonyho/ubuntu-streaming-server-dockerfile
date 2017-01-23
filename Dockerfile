@@ -16,4 +16,4 @@ RUN cat /root/nginx-rmtp-cfg-simple.txt >> /etc/nginx/nginx.conf
 ADD config-stream-arg-nginx.sh /root/
 RUN chmod u+x /root/config-stream-arg-nginx.sh
 
-CMD /root/config-stream-arg-nginx.sh && tail -f /var/log/nginx/error.log
+CMD ["sh", "/root/config-stream-arg-nginx.sh", "tail", "-f", "/var/log/nginx/error.log"]
