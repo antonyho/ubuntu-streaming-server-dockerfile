@@ -2,7 +2,7 @@
 Dockerfile for hosting streaming like Twitch and YouTube
 
 
-This Docker image is based on the instructions in this [reddit thread](https://blog.manhim.net/2015/01/live-streaming-using-a-computer-and-a-ubuntu-server-to-twitch-tv/). And with reference to the installation guide in [this blog](https://blog.manhim.net/2015/01/live-streaming-using-a-computer-and-a-ubuntu-server-to-twitch-tv/)
+This Docker image is based on the instructions in this [reddit thread](https://www.reddit.com/r/Twitch/comments/42a25b/streaming_to_twitch_and_youtube_gaming/). And with reference to the installation guide in [this blog](https://blog.manhim.net/2015/01/live-streaming-using-a-computer-and-a-ubuntu-server-to-twitch-tv/)
 
 
 ##### nginx-rmtp-cfg-simple.txt
