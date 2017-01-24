@@ -40,7 +40,6 @@ docker run --rm -p 1935:1935 \
 -e "TWITCH_STREAM_KEY=live_149239837_3w8rlsjdflaasdkfukw3hksldhjflkahsj" \
 -e "YOUTUBE_ADDRESS=a.rtmp.youtube.com/live2" \
 -e "YOUTUBE_STREAM_KEY=21s2-o23h-oso9-a64n" \
--e "FACEBOOK_ADDRESS=rtmp-api.facebook.com:80/rtmp/" \
--e "FACEBOOK_STREAM_KEY=1077231832422787?ds=1&s_l=1&a=ATiKU7Sbv9Jq_nh0" \
+-e "FACEBOOK_ADDRESS=rtmp://rtmp-api.facebook.com:80/rtmp/107383793342?ds=1&s_l=1&a=SLLsdkSLejfk-asW"
 ubuntu-stream-server
 ```
