@@ -5,7 +5,8 @@ Dockerfile for hosting streaming like Twitch and YouTube
 This Docker image is based on the instructions in this [reddit thread](https://www.reddit.com/r/Twitch/comments/42a25b/streaming_to_twitch_and_youtube_gaming/). And with reference to the installation guide in [this blog](https://blog.manhim.net/2015/01/live-streaming-using-a-computer-and-a-ubuntu-server-to-twitch-tv/)
 
 
-##### nginx-rmtp-cfg-simple.txt
+
+#### nginx-rmtp-cfg-simple.txt
 This file contains a really simple configuration to stream
 
 On the OBS computer you record the game on, put `rtmp://192.168.1.x/live` as the stream server URL.
@@ -13,7 +14,8 @@ On the OBS computer you record the game on, put `rtmp://192.168.1.x/live` as the
 `192.168.1.x` is the IP of the nginx stream server IP in your local network.
 
 
-##### nginx-rmtp-cfg-save-video.txt
+
+#### nginx-rmtp-cfg-save-video.txt
 This file contains an advanced configuration to stream with ffmpeg providing encoding parameters. And input will be recorded in 15 minutes time frame. You may modify it yourself to your need.
 
 `record_interval 15m;` - record period interval.
@@ -29,12 +31,16 @@ On the OBS computer you record the game on, put `rtmp://192.168.1.x/livein` as t
 `192.168.1.x` is the IP of the nginx stream server IP in your local network.
 
 
-##### Start the image
+
+
+### Start the image
 ```
 docker run --rm -p 1935:1935 \
 -e "TWITCH_ADDRESS=live.twitch.tv" \
 -e "TWITCH_STREAM_KEY=live_149239837_3w8rlsjdflaasdkfukw3hksldhjflkahsj" \
 -e "YOUTUBE_ADDRESS=a.rtmp.youtube.com/live2" \
 -e "YOUTUBE_STREAM_KEY=21s2-o23h-oso9-a64n" \
+-e "FACEBOOK_ADDRESS=rtmp-api.facebook.com:80/rtmp/" \
+-e "FACEBOOK_STREAM_KEY=1077231832422787?ds=1&s_l=1&a=ATiKU7Sbv9Jq_nh0" \
 ubuntu-stream-server
 ```

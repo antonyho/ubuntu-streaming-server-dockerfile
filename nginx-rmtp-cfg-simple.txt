@@ -11,6 +11,7 @@ rtmp {
 
             push rtmp://TWITCH_ADDRESS/TWITCH_STREAM_KEY;
             push rtmp://YOUTUBE_ADDRESS/YOUTUBE_STREAM_KEY;
+            push rtmp://FACEBOOK_ADDRESS/FACEBOOK_STREAM_KEY;
          }
     }
 }
