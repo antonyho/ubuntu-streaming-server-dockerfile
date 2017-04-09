@@ -31,7 +31,9 @@ On the OBS computer you record the game on, put `rtmp://192.168.1.x/livein` as t
 `192.168.1.x` is the IP of the nginx stream server IP in your local network.
 
 
-
+### Build the image
+Go to the Dockerfile directory
+`docker build -t ubuntu-stream-server .`
 
 ### Start the image
 ```
