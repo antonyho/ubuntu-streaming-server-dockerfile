@@ -37,7 +37,7 @@ Go to the Dockerfile directory
 
 ### Start the image
 ```
-docker run --rm -p 1935:1935 \
+docker run --rm -d -p 1935:1935 \
 -e "TWITCH_ADDRESS=live.twitch.tv" \
 -e "TWITCH_STREAM_KEY=live_149239837_3w8rlsjdflaasdkfukw3hksldhjflkahsj" \
 -e "YOUTUBE_ADDRESS=a.rtmp.youtube.com/live2" \
