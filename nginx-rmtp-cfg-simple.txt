@@ -1,5 +1,5 @@
 
-
+events {}
 rtmp {
     server {
         listen 1935;
@@ -9,9 +9,6 @@ rtmp {
             live on;
             record off;
 
-            push rtmp://TWITCH_ADDRESS/TWITCH_STREAM_KEY;
-            push rtmp://YOUTUBE_ADDRESS/YOUTUBE_STREAM_KEY;
-            push FACEBOOK_ADDRESS;
-         }
+        }
     }
 }

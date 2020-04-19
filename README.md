@@ -42,6 +42,7 @@ docker run --rm -d -p 1935:1935 \
 -e "TWITCH_STREAM_KEY=live_149239837_3w8rlsjdflaasdkfukw3hksldhjflkahsj" \
 -e "YOUTUBE_ADDRESS=a.rtmp.youtube.com/live2" \
 -e "YOUTUBE_STREAM_KEY=21s2-o23h-oso9-a64n" \
--e "FACEBOOK_ADDRESS=rtmp://rtmp-api.facebook.com:80/rtmp/107383793342?ds=1&s_l=1&a=SLLsdkSLejfk-asW"
+-e "MIXER_ADDRESS=ingest-tok.mixer.com:1935/beam" \
+-e "MIXER_STREAM_KEY=mixer_stream_key_string" \
 ubuntu-stream-server
 ```
