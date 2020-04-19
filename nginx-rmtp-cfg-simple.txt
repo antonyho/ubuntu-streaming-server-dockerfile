@@ -1,5 +1,3 @@
-
-events {}
 rtmp {
     server {
         listen 1935;
