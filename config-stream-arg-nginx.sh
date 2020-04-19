@@ -25,4 +25,4 @@ fi
 
 cp /root/nginx-rmtp-cfg-simple.txt /etc/nginx/nginx.conf
 
-service nginx start
+nginx -g daemon off;
