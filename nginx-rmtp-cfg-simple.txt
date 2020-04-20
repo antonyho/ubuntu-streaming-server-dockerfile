@@ -1,3 +1,9 @@
+worker_processes auto;
+
+events {
+	worker_connection 1024;
+}
+
 rtmp {
     server {
         listen 1935;
