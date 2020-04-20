@@ -18,4 +18,4 @@ fi
 
 cp /root/nginx-rmtp-cfg-simple.txt /etc/nginx/nginx.conf
 
-nginx -g "daemon off";
+nginx -g "daemon off;"
