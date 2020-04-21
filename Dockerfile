@@ -25,6 +25,8 @@ RUN apt-get -y update; \
     apt-get -y autoremove; \
     rm -rf ./*nginx*
 
+RUN touch /var/log/nginx/access.log
+RUN touch /var/log/nginx/error.log
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 VOLUME ["/etc/nginx", "/var/cache/nginx"]
